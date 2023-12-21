@@ -263,7 +263,7 @@ def fill_field_properties(args, field, defaults, path):
         prop, dynamic = fill_section_properties(args, field, defaults, path)
 
         # Only add properties if they have a content
-        if len(prop) is not 0:
+        if len(prop) != 0:
             properties[field.get("name")] = {"properties": {}}
             properties[field.get("name")]["properties"] = prop
 
@@ -276,7 +276,7 @@ def fill_field_properties(args, field, defaults, path):
         prop, dynamic = fill_section_properties(args, field, defaults, path)
 
         # Only add properties if they have a content
-        if len(prop) is not 0:
+        if len(prop) != 0:
             properties[field.get("name")] = {
                 "type": "nested",
                 "properties": {}
