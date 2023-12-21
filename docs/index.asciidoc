@@ -1,0 +1,5 @@
+= Osbeat Docs
+
+Welcome to the Osbeat documentation.
+
+
